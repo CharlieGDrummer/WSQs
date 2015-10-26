@@ -12,14 +12,12 @@ def div(x,y):
         
     return (x)
 
-x = input()
-y = input()
+x = input("Give me a number: ")
+y = input("Give me a number: ")
 
 x = int(x)
 y = int(y)
 
 r = div(x,y)
 
-print (r)
-
-p = input()
+print ("The result is: ",r)

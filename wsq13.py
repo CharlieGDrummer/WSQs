@@ -5,7 +5,7 @@ def bbsq(number):
     first = (close + number / close)/2.0
     r = (first + number/first)/2.0
     
-    while (r*r != start):
+    while ( abs(r*r - start) > 0.0000001):
         r = (r + number/r)/2.0
     return (r)
 

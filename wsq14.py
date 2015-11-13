@@ -1,5 +1,4 @@
 def calculate_e(estimation):
-    r = 1
     limit = 0.0
     oldlimit = 1.0
     n = 1

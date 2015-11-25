@@ -1,58 +1,46 @@
 fil = open("movies.txt")
-listmovies = []
-
-listactors = []
-
 
 '''
-The mothafucka actors, lee una linea de codigo hasta ahorita, almacena en   ""actorname""   el actor de dicha linea
+init = 0
+if (init = 0):
+    justlist = fil.read
+    text = fil.read()
+    for f in justlist:
+        f = justlist.readline()
 '''
+    
+f = fil.readline()
+
 sactor = 0
 eactor = 1
-fileforactors = fil.readline()
 while True:
-    actorname = fileforactors[sactor:eactor]
+    actorname = f[sactor:eactor]
     eactor = eactor + 1
     if (actorname[-1] == ","):
         break
+print ("El actor es ",actorname)
 
 
-
-'''
-The mothafucka movies, lee una linea de codigo hasta ahorita, almacena en   ""moviename""   las peliculas de dicha linea
-'''
-
-#For movies
-
-
-
+count = 0
+proof = 1
 s = eactor
 e = s + 1
-fileformovies = fil.readline()
-count = 0
-while ():
-    
-    moviename = fileformovies[s:e]
+while True:     
+    moviename = f[s:e] #Just to start
     
     while (moviename[-1] != ","):
-        moviename = fileformovies[s:e]
+        moviename = f[s:e]
         e =e+1
-        
-        if (count > len(moviename)):
-            break
-        count = count + 1
-    
-        
     if (moviename[-1] == ","):
-            x = str(moviename)
-            listmovies.append(x)
-
-                
-    
+        proof = proof + 1
     s = e
     e = e+1
-    count = count+1
+    count = count + 1
+    if (count > proof ):
+        break
 
+    print (" count: ",count, "| proof: ",proof," E ES:",e)
+x = input("DEV")
 
 
 
@@ -94,6 +82,11 @@ while True:
     eactor = eactor + 1
     if (actorname[-1] == ","):
         break
+
+
+
+
+
 
 
 '''
